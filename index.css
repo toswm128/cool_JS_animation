@@ -1,5 +1,9 @@
+
+
 body{
-    perspective: 100px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -7,16 +11,18 @@ body{
     display: flex;
     justify-content: center;
     height:100vh;
+    width: 70%;
 }
 
 .card{
-    border:1px solid black;
+    border:1px solid rgba(91,99,128,1);
     border-radius: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 40%;
     height: 100%;
+    box-shadow: 0px 0px 40px 0px rgba(91,99,128,1);
 }
 .modori{
     display: flex;
@@ -26,4 +32,23 @@ body{
 img{
     width: 50%;
 
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.button{
+    border: none;
+    width: 50%;
+    height: 10%;
+    background-color: whitesmoke;
+}
+.button:hover{
+    background-color: rgb(255, 81, 0);
 }

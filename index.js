@@ -7,3 +7,12 @@ con.addEventListener("mousemove",(e)=>{
     console.log("hey");
     card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`    ;
 });
+
+con.addEventListener("mouseenter" , e=>{
+    card.style.transition= `none`
+})
+
+con.addEventListener("mouseleave", (e)=>{
+    card.style.transition= `0.5s all ease`
+    card.style.transform = `rotateY(0deg) rotateX(0deg)`
+});
